@@ -1,5 +1,203 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.header-container {
+    position: sticky;
+    top: 0;
+    background-color: #d90429;
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    /* height: 5vh; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+}
+
+/*Collasible Styles*/
+.menu-content {
+    background-color: #ef233c;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    right: 0;
+    width: 100%;
+    max-height: 0;
+    position: fixed;
+    overflow: hidden;
+    padding: 0 0 0 40px;
+}
+
+.collapsible-menu {
+    /* flex: auto; */
+    width: 55px;
+    padding: 0px 0.75rem;
+}
+
+.collapsible-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.collapsible-menu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.menu-label {
+    display: flex;
+    align-items: center;
+    height: 5vh;
+    width: 0;
+    font-size: 1.5rem;
+    display: block;
+    cursor: pointer;
+    background: url(https://res.cloudinary.com/dk2oxzxoo/image/upload/v1698732990/siman-landing/hamburger-icon_l5ya1q.png) no-repeat center;
+    background-size: 35px;
+    padding-left: 35px;
+}
+
+.menu-checkbox,
+.menu-label-text,
+.header-user{
+    display: none;
+}
+
+.menu-checkbox:checked+.menu-label {
+    background-image: url(https://res.cloudinary.com/dk2oxzxoo/image/upload/v1698734187/siman-landing/x_xijzmc.png);
+}
+
+.menu-checkbox:checked~.menu-content {
+    max-height: 100%;
+}
+/*Ends Collapsible*/
+
+/* Other Header containers*/
+.header-logo {
+    flex: auto;
+    max-width: 100%;
+}
+
+.header-cart {
+    margin-right: 25px;
+    margin-left: 5px;
+}
+
+/*Heder containers IMG*/
+.header-logo-icon {
+    height: 35px;
+}
+
+.header-user-icon {
+    height: 35px;
+}
+
+.header-cart-icon {
+    height: 35px;
+}
+/*Ends Other Header containers*/
+
+/*Header search box*/
+.header-form {
+    height: 2.5rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 10px 10px 10px;
+    border-radius: 8px;
+    background-color: #8d99ae;
+}
+
+.header-form:focus-within{
+    background-color: #2b2d42;
+}
+
+.header-btn {
+    background-color: transparent;
+    margin-left: 15px;
+    margin-right: 10px;
+    cursor: pointer;
+    border: none;
+}
+
+.header-btn-icon {
+    height: 1.5rem;
+}
+
+.header-input {
+    flex: auto;
+    font-size: 1.1rem;
+    color: white;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+::placeholder {
+    color: white;
+    opacity: 1;
+}
+
+@media screen and (min-width:768px) {
+    .header-container {
+        height: 12vh;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .header-container {
+        height: auto;
+        padding: 1vh 0;
+    }
+
+    .header-logo {
+        order: 1;
+        flex-grow: 2;
+        max-width: 135px;
+        /* flex-basis: 140px; */
+        margin-left: 2%;
+        margin-right: 1%;
+    }
+
+   /*  .header-logo-icon{
+        height: 35px;
+    } */
+    
+    .collapsible-menu{
+        order: 2;
+        padding-right: 0;
+        width: 45px;
+    }
+    
+    .menu-label-text {
+        order: 3;
+        cursor: pointer;
+        margin-right: 1%;
+        flex-basis: 55px;
+        display: block;
+    }
+
+    .header-form{
+        order: 4;
+        flex-basis: 350px;
+        flex-grow: 4;
+        margin: auto 256px auto 0;
+    }
+
+    .header-user {
+        order: 5;
+        display: block;
+        margin: 0 5px;
+    }
+    
+    .header-cart {
+        order: 6;
+    }
+
+   
 }
