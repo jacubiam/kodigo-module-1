@@ -19,7 +19,7 @@
     align-items: center;
 }
 
-/*Collasible Styles*/
+/*Collapsible Styles*/
 .menu-content {
     background-color: #ef233c;
     border-bottom-left-radius: 20px;
@@ -64,7 +64,7 @@
 
 .menu-checkbox,
 .menu-label-text,
-.header-user{
+.header-user {
     display: none;
 }
 
@@ -75,6 +75,7 @@
 .menu-checkbox:checked~.menu-content {
     max-height: 100%;
 }
+
 /*Ends Collapsible*/
 
 /* Other Header containers*/
@@ -100,6 +101,7 @@
 .header-cart-icon {
     height: 35px;
 }
+
 /*Ends Other Header containers*/
 
 /*Header search box*/
@@ -113,8 +115,13 @@
     background-color: #8d99ae;
 }
 
-.header-form:focus-within{
+.header-form:hover {
+    border: 1px solid #edf2f4;
+}
+
+.header-form:focus-within {
     background-color: #2b2d42;
+    border: 1px solid #edf2f4;
 }
 
 .header-btn {
@@ -139,46 +146,25 @@
 }
 
 /*Footer Styles*/
-.footer-container{
+.footer-container {
     display: flex;
+    flex-wrap: wrap;
     font-family: 'Nunito', sans-serif;
 }
 
-
-
-/*Left Menu Styles*/
-.left-menu-content {
-    left: 0;
-    width: 100%;
-    max-height: 0;
-    position: static;
-    overflow: hidden;
-    padding: 0 0 0 15px;
+.left-menu-checkbox,
+.mid-menu-checkbox,
+.right-menu-checkbox {
+    display: none;
 }
 
-.footer-menu-left {
-    /* flex: auto; */
-    width: 100%;
-    /* padding: 0px 0.75rem; */
-}
-
-.footer-menu-left ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.footer-menu-left a {
-    display: block;
-    color: black;
-    margin: 20px 0;
-    text-decoration: none;
-}
-
-.left-menu-label {
+.left-menu-label,
+.mid-menu-label,
+.right-menu-label {
     align-items: center;
     height: 2vh;
     width: 95%;
-    font-size: 1rem;
+    font-size: 1.1rem;
     display: block;
     cursor: pointer;
     background: url(https://res.cloudinary.com/dk2oxzxoo/image/upload/v1698876650/siman-landing/plus_jyyhop.png) no-repeat right top;
@@ -186,8 +172,33 @@
     padding-left: 5px;
 }
 
-.left-menu-checkbox{
-    display: none;
+.left-menu-content,
+.mid-menu-content,
+.right-menu-content {
+    left: 0;
+    font-size: 0.9rem;
+    width: 100%;
+    max-height: 0;
+    position: static;
+    overflow: hidden;
+    padding: 0 0 15px 20px;
+}
+
+.footer-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-container a {
+    display: block;
+    color: black;
+    margin: 20px 0;
+    text-decoration: none;
+}
+
+/*Left Menu Styles*/
+.footer-menu-left {
+    width: 100%;
 }
 
 .left-menu-checkbox:checked+.left-menu-label {
@@ -197,16 +208,64 @@
 .left-menu-checkbox:checked~.left-menu-content {
     max-height: 100%;
 }
+
 /*Ends Left menu*/
 
 /*Mid Menu*/
 .footer-menu-mid {
-    /* flex: auto; */
     width: 100%;
-    /* padding: 0px 0.75rem; */
 }
+
+.mid-menu-checkbox:checked+.mid-menu-label {
+    background-image: url(https://res.cloudinary.com/dk2oxzxoo/image/upload/v1698876709/siman-landing/minus_u6lueb.png);
+}
+
+.mid-menu-checkbox:checked~.mid-menu-content {
+    max-height: 100%;
+}
+
 /*Ends Mid menu*/
 
+/*Right Menu*/
+.footer-menu-right {
+    width: 100%;
+}
+
+.right-menu-checkbox:checked+.right-menu-label {
+    background-image: url(https://res.cloudinary.com/dk2oxzxoo/image/upload/v1698876709/siman-landing/minus_u6lueb.png);
+}
+
+.right-menu-checkbox:checked~.right-menu-content {
+    max-height: 100%;
+}
+/*Ends Right Menu*/
+
+.footer-text-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-text{
+    text-align: center;
+    width: 275px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-top: 1px solid #ef233c;
+    border-bottom: 1px solid #ef233c;
+    padding: 10px 0;
+}
+
+.footer-social{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer-social a img{
+    width: 35px;
+}
 /*Ends Footer Styles*/
 
 ::placeholder {
@@ -235,16 +294,16 @@
         margin-right: 1%;
     }
 
-   /*  .header-logo-icon{
+    /*  .header-logo-icon{
         height: 35px;
     } */
-    
-    .collapsible-menu{
+
+    .collapsible-menu {
         order: 2;
         padding-right: 0;
         width: 45px;
     }
-    
+
     .menu-label-text {
         order: 3;
         cursor: pointer;
@@ -253,7 +312,7 @@
         display: block;
     }
 
-    .header-form{
+    .header-form {
         order: 4;
         flex-basis: 350px;
         flex-grow: 4;
@@ -265,10 +324,10 @@
         display: block;
         margin: 0 5px;
     }
-    
+
     .header-cart {
         order: 6;
     }
 
-   
+
 }
