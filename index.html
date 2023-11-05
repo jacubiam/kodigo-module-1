@@ -15,12 +15,18 @@
             <label class="menu-label" for="menu"></label>
             <div class="menu-content">
                 <ul>
-                    <li><a href="#"></a>Home</li>
-                    <li><a href="#"></a>Services</li>
-                    <li><a href="#"></a>Projects</li>
-                    <li><a href="#"></a>About</li>
-                    <li><a href="#"></a>Blog</li>
-                    <li><a href="#"></a>Contacts</li>
+                    <li class="menu-content-user">
+                        <a href="#">Iniciar Sesión</a>
+                    </li>
+                    <li class="menu-content-cart">
+                        <a href="">Ir al carrito</a>
+                    </li>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Projectos</a></li>
+                    <li><a href="#">Sobre nosotros</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contáctanos</a></li>
                 </ul>
             </div>
         </div>
@@ -32,12 +38,12 @@
         </div>
         <div class="header-user">
             <img class="header-user-icon"
-                src="https://res.cloudinary.com/dk2oxzxoo/image/upload/v1698732990/siman-landing/user_dnubx4.png"
+                src="https://res.cloudinary.com/dk2oxzxoo/image/upload/v1699221978/siman-landing/user_fxh1tx.png"
                 alt="">
         </div>
-        <div class="header-cart">
-            <img class="header-cart-icon"
-                src="https://res.cloudinary.com/dk2oxzxoo/image/upload/v1698732991/siman-landing/shopping-cart_jyyzhz.png"
+        <div class="header-branch">
+            <img class="header-branch-icon"
+                src="https://res.cloudinary.com/dk2oxzxoo/image/upload/v1699165625/siman-landing/building-store_aazh5z.png"
                 alt="">
         </div>
         <form class="header-form" action="">
@@ -49,18 +55,44 @@
             <input class="header-input" type="text" placeholder="Buscar">
         </form>
     </header>
-    <main>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam libero nesciunt ut perspiciatis hic pariatur
-            sed quod corrupti beatae vero adipisci culpa sint nemo commodi sunt cumque cupiditate, aliquam
-            exercitationem.</p>
-        <br>
+    <main class="main-container">
+        <p class="hero-text">
+            Descuento del <span>10%</span> en todos los departamentos
+        </p>
+        <div class="pic-ctn">
+            <img src="https://res.cloudinary.com/dk2oxzxoo/image/upload/v1699038184/siman-landing/c940bfeb-fcd1-4294-ae56-c46a1dfb551b___e005e1896955205978342485d0cf665e_fxih9n.webp" alt="" class="pic hero-img-1">
+            <img src="https://res.cloudinary.com/dk2oxzxoo/image/upload/v1699038184/siman-landing/9991355c-c972-449c-93cc-e5416106a532___2f1185ecd9f92fe4f454773ae74f0221_i6vzfp.webp" alt="" class="pic hero-img-2">
+            <img src="https://res.cloudinary.com/dk2oxzxoo/image/upload/v1699079713/siman-landing/b8e05e71-4dca-41f8-93e4-05f276b541b4___5009eb202df176dbc2ab5b8ba8f71fc4_jwnosa.webp" alt="" class="pic hero-img-3">
+            <img src="https://res.cloudinary.com/dk2oxzxoo/image/upload/v1699038184/siman-landing/d294ec79-c453-4db1-84c0-dbb8cdd60615___00cc7f6354865b3372513ce0a7272815_1_pg5ycr.webp" alt="" class="pic hero-img-4">
+            <img src="https://res.cloudinary.com/dk2oxzxoo/image/upload/v1699038184/siman-landing/af6865a2-d5b6-461c-8c6a-b57b3e86047b___8fbe48b1cf4183ece4d5df6526fdfd21_bylthk.webp" alt="" class="pic hero-img-5">
+        </div>
     </main>
+    <section class="section-promotion">
+        <p class="section-promotion-text">Promociones</p>
+        <img src="https://res.cloudinary.com/dk2oxzxoo/image/upload/v1699135739/siman-landing/Promo/09664a6e-1f43-4ca7-b236-4dc4a3732eb0___b427354bfde7e9b2e485bf7c38556969_dxm9h5.jpg" alt="promo-item">
+        <img src="https://res.cloudinary.com/dk2oxzxoo/image/upload/v1699135739/siman-landing/Promo/ef7cea48-cca6-4e6b-8d3e-d0d6eae24d00___7a359364fcfe46f517b4560cfe57ee93_cedkqk.jpg" alt="promo-item">
+        <img src="https://res.cloudinary.com/dk2oxzxoo/image/upload/v1699135740/siman-landing/Promo/6ba5580f-17fe-4684-a3d9-f295bcd166cc___feb0e7113a07ec5f190a4bf6a8edb236_ycsndt.jpg" alt="promo-item">
+        <img src="https://res.cloudinary.com/dk2oxzxoo/image/upload/v1699135740/siman-landing/Promo/8b4a2e37-1d80-4216-8840-af2c3e8b5db1___921f47d415f33bd8602a6f88ee2fd290_wp23v6.jpg" alt="promo-item">
+        <img src="https://res.cloudinary.com/dk2oxzxoo/image/upload/v1699135739/siman-landing/Promo/53c86c87-dc0e-4b6e-8e2b-50b01a433157___4618f61d0e0fdd9b3163b6845dc6a475_w9bulo.jpg" alt="promo-item">
+        <img src="https://res.cloudinary.com/dk2oxzxoo/image/upload/v1699135739/siman-landing/Promo/998391d4-3158-4217-be17-6ed89d220ac0___a87a2dd91710536f4ebee8f6e2b80356_x6letg.jpg" alt="promo-item">
+    </section>
+    <section class="section-flash-sales">
+        <div class="section-flash-sales-info">
+            <img src="https://res.cloudinary.com/dk2oxzxoo/image/upload/v1699149574/siman-landing/23fcf184-a226-4fff-a37c-536e7da096b2___78e22be10d3335eb6e86e5ab5c4c7b31_rolt7o.gif" alt="">
+            <p>Por tiempo limitado</p>
+        </div>
+        <img class="section-flash-sales-img" src="https://res.cloudinary.com/dk2oxzxoo/image/upload/v1699148639/siman-landing/Promo/d49bacfc-d022-4595-aa50-0bfef19ced90___8e27b49118ba8c76029288ad8c3b53d3_y3nzc9.webp" alt="">
+        <img class="section-flash-sales-img" src="https://res.cloudinary.com/dk2oxzxoo/image/upload/v1699148639/siman-landing/Promo/99f45678-4555-4ebb-ae23-902c0f6f5692___0de5683b827f383085603fdce1c701b0_nyrrr8.webp" alt="">
+        <img class="section-flash-sales-img" src="https://res.cloudinary.com/dk2oxzxoo/image/upload/v1699148639/siman-landing/Promo/b6ce0857-0e24-4a30-88cf-ced3f1823744___7c3865c98ce2749b4c4cd8a58d88aac2_kndr1x.webp" alt="">
+    </section>
     <footer class="footer-container">
         <div class="footer-logo">
-            <img src="https://res.cloudinary.com/dk2oxzxoo/image/upload/v1698965009/siman-landing/logo-footer_cvduir.png" alt="">
+            <img src="https://res.cloudinary.com/dk2oxzxoo/image/upload/v1698965009/siman-landing/logo-footer_cvduir.png"
+                alt="">
         </div>
         <div class="footer-phone">
-            <img src="https://res.cloudinary.com/dk2oxzxoo/image/upload/v1698965197/siman-landing/phone-filled_e0qbzd.png" alt="">
+            <img src="https://res.cloudinary.com/dk2oxzxoo/image/upload/v1698965197/siman-landing/phone-filled_e0qbzd.png"
+                alt="">
             <p>2334 0000</p>
         </div>
         <div class="footer-menu-left">
@@ -111,19 +143,24 @@
         </div>
         <div class="footer-social">
             <a href="#">
-            <img src="https://res.cloudinary.com/dk2oxzxoo/image/upload/v1698886426/siman-landing/brand-facebook-filled_tm7tui.png" />
+                <img
+                    src="https://res.cloudinary.com/dk2oxzxoo/image/upload/v1698886426/siman-landing/brand-facebook-filled_tm7tui.png" />
             </a>
             <a href="#">
-                <img src="https://res.cloudinary.com/dk2oxzxoo/image/upload/v1698886426/siman-landing/brand-instagram_pztyfd.png" alt="">
+                <img src="https://res.cloudinary.com/dk2oxzxoo/image/upload/v1698886426/siman-landing/brand-instagram_pztyfd.png"
+                    alt="">
             </a>
             <a href="#">
-                <img src="https://res.cloudinary.com/dk2oxzxoo/image/upload/v1698886425/siman-landing/brand-twitter-filled_vdne4s.png" alt="">
+                <img src="https://res.cloudinary.com/dk2oxzxoo/image/upload/v1698886425/siman-landing/brand-twitter-filled_vdne4s.png"
+                    alt="">
             </a>
             <a href="#">
-                <img src="https://res.cloudinary.com/dk2oxzxoo/image/upload/v1698886425/siman-landing/brand-youtube-filled_iwzqx2.png" alt="">
+                <img src="https://res.cloudinary.com/dk2oxzxoo/image/upload/v1698886425/siman-landing/brand-youtube-filled_iwzqx2.png"
+                    alt="">
             </a>
             <a href="#">
-                <img src="https://res.cloudinary.com/dk2oxzxoo/image/upload/v1698886425/siman-landing/brand-google-play_mfas2l.png" alt="">
+                <img src="https://res.cloudinary.com/dk2oxzxoo/image/upload/v1698886425/siman-landing/brand-google-play_mfas2l.png"
+                    alt="">
             </a>
         </div>
         <p class="footer-copyright-text">© 2000-2023 Copyright Almacenes Siman El Salvador.
