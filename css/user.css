@@ -1,12 +1,12 @@
-.section-login{
+.section-login {
     max-width: 400px;
     border-radius: 10px;
-    margin:50px auto;
+    margin: 50px auto 10px auto;
     background-color: #ef233c;
     font-family: 'Poppins', sans-serif;
 }
 
-.login-form{
+.login-form {
     max-width: 365px;
     display: flex;
     justify-content: center;
@@ -18,20 +18,20 @@
     align-items: center;
 }
 
-.login-actions{
+.login-actions {
     width: 80%;
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: space-between;
-   align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.login-form label{
+.login-form label {
     display: inline-block;
     width: 100px;
 }
 
-.login-form input{
+.login-form input {
     background-color: #8d99ae;
     color: white;
     outline: none;
@@ -48,13 +48,13 @@
     border: 1px solid #edf2f4;
 }
 
-.login-form a{
+.login-form a {
     text-decoration: none;
     color: white;
     font-size: 0.85rem;
 }
 
-.login-btn{
+.login-btn {
     color: white;
     font-size: 1rem;
     background-color: #2b2d42;
@@ -63,27 +63,49 @@
     padding: 10px;
 }
 
-::-ms-reveal{
+/*Sign in*/
+.login-anchor {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.login-actions-signin{
+    justify-content: center;
+}
+
+.login-anchor a {
+    margin: 0 auto;
+    color: #2b2d42;
+    text-decoration: none;
+}
+/*Ends Sign in*/
+
+::-ms-reveal {
     filter: invert(100%);
 }
 
-@media screen and (min-width:576px){
-    .section-login, .login-form input{
+@media screen and (min-width:576px) {
+
+    .section-login,
+    .login-form input {
         font-size: 1.1rem;
     }
 }
 
 @media screen and (min-width:768px) {
-    .section-login, .login-form input{
+
+    .section-login,
+    .login-form input {
         font-size: 1.15rem;
     }
 
-    .login-form label{
+    .login-form label {
         width: 110px;
     }
 
-    .login-form a{
+    .login-form a {
         font-size: 0.9rem;
     }
-    
+
 }
